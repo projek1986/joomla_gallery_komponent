@@ -1,0 +1,408 @@
+#gallery{
+
+	float: left;
+	width: 100%;
+
+}
+
+#gallery-header{
+
+	padding: 12px 0;
+	width: 100%;
+	float: left;
+
+}
+
+#gallery-header-center{
+
+	height: 100px;
+	width: 950px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+#gallery-header-center-left{
+
+	float: leftt;
+}
+
+#gallery-header-center-left-icon{
+
+	float: left;
+	height: 35px;
+	width: 35px;
+	background-color: rgba(63,141,191,1);
+	color: rgba(255,255,255,1);
+	text-align: center;
+	font-size: 20px;
+	-webkit-transition: background 0.5s;
+	-moz-transition: background 0.5s;
+	-o-transition: background 0.5s;
+	transition: background 0.5s;
+
+}
+
+#gallery-header-center-left-icon:hover {
+
+	background-color: rgba(63,141,191,0.5);
+	cursor: pointer;
+
+}
+
+#gallery-header-center-left-title{
+
+	float: left;
+	height: 35px;
+	font-size: 25px;
+	color: #3f8dbf;
+	margin-left: 20px;
+
+}
+
+#gallery-header-center-right{
+
+	float: right;
+	height: 35px;
+	margin-top: 32px;
+	
+
+}
+
+.gallery-header-center-right-links {
+
+	color: #777;
+	float: left;
+	padding: 4px 24px 2px 24px;
+	border: 1px solid #E5E5E6;
+	margin: 6px;
+	text-decoration: none;
+	font-size: 12px;
+	text-transform: uppercase;
+	-webkit-transition: background 0.5s;
+	-moz-transition: background 0.5s;
+	-o-transition: background 0.5s;
+	transition: background 0.5s;
+
+}
+
+.gallery-header-center-right-links:hover,
+.gallery-header-center-right-links-current  {
+
+	background-color: #E54520;
+	color: #fff;
+	cursor: pointer;
+
+}
+
+
+#gallery-content{
+
+	float: left;
+	width: 100%;
+
+}
+
+.gallery-content-center-normal {
+
+	width: 950px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+.gallery-content-center-full {
+
+	float: left;
+	width: 100%;
+
+}
+
+#warstwaDanych{	
+	position: absolute;
+	top: 120px;
+	background-color: #E54520;	
+	width: 1140px;
+	color: #f2f2f2;	
+	overflow: auto;
+	right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+	z-index:999;
+	}
+	
+	
+#warstwaDanych a.close{
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40px;
+	height: 40px;
+	background-image: url('close.png');
+	background-repeat: no-repeat;
+	opacity: 1;
+}
+
+#warstwaDanych a.close:hover{
+	opacity: 0.9;
+}
+	
+@media (max-width: 1200px) {
+	#warstwaDanych{	
+		width: 80%;
+	}
+}	
+
+@media (max-width: 1020px) {
+	#warstwaDanych{	
+		width: 100%;
+	}
+}	
+	
+	
+.zwykla{	
+	max-height: 0;	
+	opacity: 0;
+	 -webkit-transform: translateX(-150px);
+    -moz-transform: translateX(-150px);
+    transform: translateX(-150px);
+}
+
+.showMe{	
+	display: block;
+	opacity: 1;	
+	padding: 30px;	
+	max-height: 99999px; /* approximate max height */	
+	/*transition-property: all;	
+	transition-duration: 0.3s;	
+	transition-timing-function: linear;*/
+	 -webkit-transition: -webkit-transform 1s, opacity 1s;
+    -moz-transition: -moz-transform 1s, opacity 1s;
+    transition: transform 1s, opacity 1s;
+    -webkit-transform: translate(0px);
+    -moz-transform: translate(0px);
+    transform: translate(0px);
+    opacity: 1;
+	}
+	
+	
+
+#warstwaDanych h2{	
+	text-transform: uppercase;
+	 font-family: "benderbold",sans-serif;
+}
+
+#warstwaDanych p{		
+padding: 24px 0;
+text-align: justify;
+	}
+
+#warstwaDanych .opisy{
+	width: 50%;
+	float: left;
+}	
+	
+
+.special-gallery{	width: 100%;}
+
+@media (max-width: 768px) {
+
+	.image-set{	
+		width: 100%;	float: left;	
+	}		
+	
+}
+
+#gallery figure{
+	position: relative;
+    float: left;
+    overflow: hidden;
+	padding: 16px;
+    /*min-width: 380px;
+    max-height: 500px;*/
+    text-align: center;
+    cursor: pointer;
+     width: 250px;
+	 height: 400px;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+#gallery figure img{
+	width: auto;
+	height: 342px;
+}
+
+#gallery figure h3{
+	font-size: 16px;
+	margin: 0;
+	padding:4px;
+}
+
+#gallery figure p{
+	font-size: 12px;
+	margin: 0;
+	padding:0;
+}
+
+#gallery figure .over{
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	margin-top: -16px;
+	margin-left: -16px;
+	background: rgba(255,255,255,0.7);
+	position: absolute;
+	/*background-image: url('overlay.png');*/
+	background-repeat: no-repeat;
+	background-position: center 40%;
+	-webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+#gallery figure:hover .over{
+	opacity: 1;
+}
+
+
+.image-set{
+	width: 50%;
+	float: right;
+	margin-top: 40px;
+	padding-left: 20px;
+	
+	}
+
+.linker{
+	position: relative;
+	width:150px;
+	height:150px; 
+	overflow: hidden;
+	margin: 6px; 
+	display: inline-block;
+}
+
+
+@media (max-width: 1000px) {
+	.image-set{	
+	width: 100%;	
+	float: left;
+	padding-left: 0;
+	}
+	
+	#warstwaDanych .opisy{
+	width: 100%;
+}	
+
+	
+	
+	
+	.linker{	
+		float: left;
+	}
+}
+
+@media (max-width: 400px) {
+	.image-set{	
+	width: 100%;	
+	float: left;
+	}
+	
+	.linker{	
+		//width: 100%;
+		//height: auto;
+		float: left;
+	}
+	
+	.linker img{	
+	//width: 100%;
+}
+	
+}
+	
+.linker img{	
+	/*height: auto;
+	width: 100%;
+	min-height: 150px;*/
+	height: auto;
+	width: auto;
+	min-height: 100%;
+	
+}
+
+.linker-over{
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background: rgba(255,255,255,0.7);
+	position: absolute;
+	background-image: url('overlay.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+.linker:hover .linker-over{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.example-image-link{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	
+}
+
+.tab-next{
+	display: inline-block;
+	position: relative;
+	width: 35px;
+	height: 35px;
+	background-image: url('right-2.jpg');
+	background-repeat: no-repeat;
+	background-color: c3310f;
+	opacity: 1;
+	float:right;
+}
+
+.tab-prev{
+	display: inline-block;
+	position: relative;
+	width: 35px;
+	height: 35px;
+	background-image: url('left-2.jpg');
+	background-repeat: no-repeat;
+	background-color: c3310f;
+	opacity: 1;
+	float:left;
+}
+
+.tab-next:hover,
+.tab-prev:hover{
+	cursor: pointer;
+}
+
+.tab-next:hover{background-image: url('right.jpg');}
+.tab-prev:hover{background-image: url('left.jpg');}
+
+#warstwaDanych .buttons{
+	max-width: 70px;
+	float: left;
+	margin-right: 12px;
+}

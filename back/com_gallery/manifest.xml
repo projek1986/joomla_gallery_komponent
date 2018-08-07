@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+ 
+        <name>Gallery</name>
+        <creationDate>Kwiecien 2015</creationDate>
+        <author>Ajmer</author>
+        <authorEmail>ajmer@biuro.pl</authorEmail>
+        <authorUrl>http://ajmer.pl</authorUrl>
+        <copyright>Copyright...</copyright>
+        <license>Tresc licencji</license>
+        <version>1.0</version>
+        <description>Komponent Galerii</description>
+		
+		<files folder="site">
+			<filename>gallery.php</filename>
+			<filename>index.html</filename>
+		</files>
+		
+		<install>
+			<sql>
+				<file charset="utf8" driver="mysql">install.mysql.sql</file>
+			</sql>
+		</install>
+		
+		
+		<administration>
+			<menu>Gallery</menu>
+			
+			<files folder="admin">
+				<filename>index.html</filename>
+				<filename>gallery.php</filename>
+				<filename>install.mysql.sql</filename>
+				
+			</files>
+		</administration>
+		
+</extension>
